@@ -1,0 +1,656 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="icon" type="image/png" href="favicon.png">
+		<title>Metodology</title>
+	</head>
+
+	<body>
+		<header class="header">
+            <span class="header_line header_line--top"></span>
+            <span class="header_line header_line--right"></span>
+            <span class="header_line header_line--bottom"></span>
+            <span class="header_line header_line--left"></span>
+            <div class="header_text">Восстановление кабельной линии 6(10)кВ системы электроснабжения специальных объектов</div>
+        </header>
+		<main class="main">
+            <div class="data">
+                <div class="input_data">
+                    <div class="input_data_colum_1">
+                        <div>
+                            <div class="input_data_colum_text">Вид повреждения</div>
+                            <div class="input_data_colum_1_line"></div>
+                        </div>
+                        <div class="input">
+                            <div class="cirkul_border">
+                                <div class="cirkul"></div>
+                            </div>
+                            <input type="radio" name="type_of_damage" value="1" class="radio">
+                            <div class="text_input"> Обрыв одной, двух или трех фаз (R<small>из</small> > 100 МОм) </div>                            
+                        </div>
+                        <div class="input">
+                            <div class="cirkul_border">
+                                <div class="cirkul"></div>
+                            </div>
+                            <input type="radio" name="type_of_damage" value="2" class="radio">
+                            <div class="text_input"> Короткое замыкание двух фаз (R<small>из</small> = R<small>п</small> < 20 Ом) </div>
+                        </div>
+                        <div class="input">
+                            <div class="cirkul_border">
+                                <div class="cirkul"></div>
+                            </div>
+                            <input type="radio" name="type_of_damage" value="3" class="radio">
+                            <div class="text_input"> Обрыв с коротким замыканием двух фаз (R<small>из</small> > 100 кОм) </div>
+                        </div>
+                        <div class="input">
+                            <div class="cirkul_border">
+                                <div class="cirkul"></div>
+                            </div>
+                            <input type="radio" name="type_of_damage" value="4" class="radio">
+                            <div class="text_input"> Короткое замыкание двух фаз (R<small>из</small> > 100 кОм) </div>
+                        </div>
+                        <div class="input">
+                            <div class="cirkul_border">
+                                <div class="cirkul"></div>
+                            </div>
+                            <input type="radio" name="type_of_damage" value="5" class="radio">
+                            <div class="text_input"> Однофазное замыкание на землю (R<small>из</small> > 100 кОм) </div>
+                        </div>
+                        <div class="input">
+                            <div class="cirkul_border">
+                                <div class="cirkul"></div>
+                            </div>
+                            <input type="radio" name="type_of_damage" value="6" class="radio">
+                            <div class="text_input"> Обрыв с однофазным замыканием на землю (R<small>из</small> > 100 кОм) </div>
+                        </div>
+                        <div class="input">
+                            <div class="cirkul_border">
+                                <div class="cirkul"></div>
+                            </div>
+                            <input type="radio" name="type_of_damage" value="7" class="radio">
+                            <div class="text_input"> Однофазное замыкание на землю (R<small>из</small> = R<small>п</small> < 20 Ом) </div>
+                        </div>
+                        <div class="alert">Укажите вид повреждения</div>
+                    </div>
+                    <div class="input_data_colum_2">
+                        <div class="distance">
+                            <div>
+                                <div class="distance_text">Расстояние</div>
+                                <div class="distance_line"></div>
+                            </div>
+                            <div class="distance_set">
+                                <input type="number" name="value_of_distance" min=5 max=200 value=5 class="distance_value">
+                                <div class="distance_measure"> (км) </div>
+                            </div>
+                            <div class="alert">Расстояние от 5 до 200 км</div>
+                        </div>
+                        <div class="segment">
+                            <div>
+                                <div class="segment_text">Тип участка</div>
+                                <div class="segment_line"></div>
+                            </div>
+                            <div class="type_of_segment">
+                                <div class="cirkul_border">
+                                    <div class="cirkul"></div>
+                                </div>
+                                <input type="radio" name="number_of_segment" value="1" id="10" class="radio">
+                                <div for="10" class="text_input">тупиковый</div>
+                            </div>
+                            <div class="type_of_segment">
+                                <div class="cirkul_border">
+                                    <div class="cirkul"></div>
+                                </div>
+                                <input type="radio" name="number_of_segment" value="2" id="11" class="radio">
+                                <div for="11" class="text_input">проходной</div>
+                            </div>
+                            <div class="alert">Укажите тип участка</div>
+                        </div>
+                        <div class="stupen_projiga">
+                            <div>
+                                <div class="stupen_projiga_text">Ступень прожига</div>
+                                <div class="stupen_projiga_line"></div>
+                            </div>
+                            <div class="number_of_stupen_projiga">
+                                <div class="cirkul_border">
+                                    <div class="cirkul"></div>
+                                </div>
+                                <input type="radio" name="type_of_stupen_projiga" value="1" id="7" class="radio">
+                                <div class="text_input" for="7">1 ступень</div>
+                            </div>
+                            <div class="number_of_stupen_projiga">
+                                <div class="cirkul_border">
+                                    <div class="cirkul"></div>
+                                </div>
+                                <input type="radio" name="type_of_stupen_projiga" value="2" id="8" class="radio">
+                                <div for="8" class="text_input">2 ступень</div>
+                            </div>
+                            <div class="number_of_stupen_projiga">
+                                <div class="cirkul_border">
+                                    <div class="cirkul"></div>
+                                </div>
+                                <input type="radio" name="type_of_stupen_projiga" value="3" id="9" class="radio">
+                                <div for="9" class="text_input">3 ступень</div>
+                            </div>
+                            <div class="alert">Укажите ступень прожига</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="result">
+                    <div type="button" class="button">Расчитать время</div>
+                    <div class="result_output">
+                        <div class="time_of_repair">
+                            <div class="time_of_repair_text">Время устранения несправности</div>
+                            <div class="time_of_repair_result">00:00:00</div>
+                        </div>
+                        <div class="time_of_new_repair">
+                            <div class="time_of_new_repair_text">Время устранения несправности по новой методике</div>
+                            <div class="time_of_new_repair_result">00:00:00</div>
+                        </div>
+                        <div class="time_difference">
+                            <div class="time_difference_text">Разница по времени</div>
+                            <div class="time_difference_result">00:00:00</div>
+                        </div>
+                        <div class="percent">
+                            <div class="percent_text">Процент выигрыша</div>
+                            <div class="percent_result">
+                                <div class="percent_result_value">0</div>
+                                <div class="percent_result_simbol"> %</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div type="button" class="button_reset">Сбросить параметры</div>
+                </div>
+            </div>
+
+            <div class="motodology">
+                <div class="motodology_header">Методика устранения неисправности</div>
+                <div class="motodology_main">
+                    <div class="motodology_tabale_name">
+                        <div class="motodology_tabale_name_name">Наименование мероприятия</div>
+                        <div class="motodology_tabale_name_time">
+                            <div class="motodology_tabale_name_time_old">Время выполнения</div>
+                            <div class="motodology_tabale_name_time_new">Время выполнения по новой методике</div>
+                        </div>
+                    </div>
+                    <div class="horisont_line"></div>
+                    <div class="motodology_point">
+                        <div class="motodology_point_first">
+                            <div class="button_mini_hidden"></div>
+                            <div class="motodology_text">
+                                <div class="motodology_text_header">Ликвидация аварийного режима</div>
+                            </div>
+                        </div>
+                        <div class="motodology_number">
+                            <div class="motodology_number_old">0:00:03</div>
+                            <div class="motodology_number_new">0:00:03</div>
+                        </div>
+                        
+                    </div>
+                    <div class="motodology_point">
+                        <div class="motodology_point_first">
+                            <div class="button_mini">
+                                <div class="button_mini_line_1"></div>
+                                <div class="button_mini_line_2"></div>
+                                <div class="button_mini_line_3"></div>
+                            </div>
+                            <div class="motodology_text">
+                                <div class="motodology_text_header">Административная задержка</div> 
+                                <div class="menu">
+                                    <div class="menu_point">
+                                        <div class="menu_text">Доклад КДС дивизиона КДС полка о неисправности</div>
+                                        <div class="menu_time">
+                                            <div class="menu_time_old">0:06:00</div>
+                                            <div class="menu_time_new">0:06:00</div>
+                                        </div>                                        
+                                    </div>
+                                    <div class="menu_point">
+                                        <div class="menu_text">Доклад КДС полка КДС дивизии и сообщение на ОТПУ о неисправности</div>
+                                        <div class="menu_time">
+                                            <div class="menu_time_old">0:06:00</div>
+                                            <div class="menu_time_new">0:06:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="menu_point">
+                                        <div class="menu_text">Доклад КДС дивизии КДС РВСН, постановка задачи начальнику ДТС дивизии на разработку предложений по устранению неисправности</div>
+                                        <div class="menu_time">
+                                            <div class="menu_time_old">0:06:00</div>
+                                            <div class="menu_time_new">0:06:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="menu_point">
+                                        <div class="menu_text">Вызов на ТехПУ необходимых должностных лиц (специалистов трб)</div>
+                                        <div class="menu_time">
+                                            <div class="menu_time_old">0:01:00</div>
+                                            <div class="menu_time_new">0:01:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="menu_point">
+                                        <div class="menu_text">Занесение сведений о неисправности в журнал БД ДТС рд</div>
+                                        <div class="menu_time">
+                                            <div class="menu_time_old">0:08:00</div>
+                                            <div class="menu_time_new">0:08:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="menu_point">
+                                        <div class="menu_text">Постановка задач начальником ДТС на анализ неисправности и разработку предложений</div>
+                                        <div class="menu_time">
+                                            <div class="menu_time_old">0:06:00</div>
+                                            <div class="menu_time_new">0:06:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="menu_point">
+                                        <div class="menu_text">Доклад НДТС ТехПУ НДТС дивизии предложений по выявлению и устранению неисправности</div>
+                                        <div class="menu_time">
+                                            <div class="menu_time_old">0:05:00</div>
+                                            <div class="menu_time_new">0:05:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="menu_point">
+                                        <div class="menu_text">Доклад НДТС дивизии КДС дивизии предложений по выявлению и устранению неисправности</div>
+                                        <div class="menu_time">
+                                            <div class="menu_time_old">0:06:00</div>
+                                            <div class="menu_time_new">0:06:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="menu_point">
+                                        <div class="menu_text">Отдание КДС дивизии приказа на выявление и устранение неисправности</div>
+                                        <div class="menu_time">
+                                            <div class="menu_time_old">0:03:00</div>
+                                            <div class="menu_time_new">0:03:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="menu_point">
+                                        <div class="menu_text">Доклад начальника ДТС дивизии о готовности выездного расчёта, ЭИП, ТМС, технического задания</div>
+                                        <div class="menu_time">
+                                            <div class="menu_time_old">0:03:00</div>
+                                            <div class="menu_time_new">0:03:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="menu_point">
+                                        <div class="menu_text">Отдание КДС дивизии приказа на выявление и устранение неисправности</div>
+                                        <div class="menu_time">
+                                            <div class="menu_time_old">0:05:00</div>
+                                            <div class="menu_time_new">0:05:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="menu_point">
+                                        <div class="menu_text">Получение начальником выездного расчёта технического задания</div>
+                                        <div class="menu_time">
+                                            <div class="menu_time_old">0:10:00</div>
+                                            <div class="menu_time_new">0:10:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="menu_point">
+                                        <div class="menu_text">Постановка начальником ДТС дивизии задачи начальнику выездного расчёта</div>
+                                        <div class="menu_time">
+                                            <div class="menu_time_old">0:20:00</div>
+                                            <div class="menu_time_new">0:20:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="menu_point">
+                                        <div class="menu_text">Доклад НДТС дивизии об убытии выездного расчёта</div>
+                                        <div class="menu_time">
+                                            <div class="menu_time_old">0:01:00</div>
+                                            <div class="menu_time_new">0:01:00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="motodology_number">
+                            <div class="motodology_number_old">1:26:00</div>
+                            <div class="motodology_number_new">1:26:00</div>
+                        </div>
+                    </div>
+                    <div class="motodology_point">
+                        <div class="motodology_point_first">
+                            <div class="button_mini">
+                                <div class="button_mini_line_1"></div>
+                                <div class="button_mini_line_2"></div>
+                                <div class="button_mini_line_3"></div>
+                            </div>
+                            <div class="motodology_text">
+                                <div class="motodology_text_header">Логическая задержка</div>
+                                <div class="menu_1">
+                                    <div class="menu_point">
+                                        <div class="menu_text">Разработка предложений по выявлению и устранению неисправностей</div>
+                                        <div class="menu_time">
+                                            <div class="menu_time_old">0:45:00</div>
+                                            <div class="menu_time_new">0:45:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="menu_point">
+                                        <div class="menu_text">Разработка технического задания и выдача наряда-допуска, получение ЗИП и ТМС</div>
+                                        <div class="menu_time">
+                                            <div class="menu_time_old">0:45:00</div>
+                                            <div class="menu_time_new">0:45:00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="motodology_number">
+                            <div class="motodology_number_old">2:10:00</div>
+                            <div class="motodology_number_new">2:10:00</div>
+                        </div>                            
+                    </div>
+                    <div class="motodology_point">
+                        <div class="motodology_point_first">
+                            <div class="button_mini">
+                                <div class="button_mini_line_1"></div>
+                                <div class="button_mini_line_2"></div>
+                                <div class="button_mini_line_3"></div>
+                            </div>
+                            <div class="motodology_text">
+                                <div class="motodology_text_header">Техническая задержка</div>
+                                <div class="menu_2">
+                                    <div class="menu_point">
+                                        <div class="menu_text">Совершение марша к месту неисправности</div>
+                                        <div class="menu_time">
+                                            <div class="menu_time_old">0:07:30</div>
+                                            <div class="menu_time_new">0:07:30</div>
+                                        </div>
+                                    </div>
+                                    <div class="menu_point">
+                                        <div class="menu_text">Подготовка рабочего места и допуск расчёта к работе, развёртывание агрегата РМК</div>
+                                        <div class="menu_time">
+                                            <div class="menu_time_old">0:30:00</div>
+                                            <div class="menu_time_new">0:30:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="menu_point">
+                                        <div class="menu_text">Анализ работы РЗиА, измерение Rиз, Rп. Определение характера неисправности</div>
+                                        <div class="menu_time">
+                                            <div class="menu_time_old">0:30:00</div>
+                                            <div class="menu_time_new">0:30:00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="motodology_number">
+                            <div class="motodology_number_old">1:07:30</div>
+                            <div class="motodology_number_new">1:07:30</div>
+                        </div>                            
+                    </div>
+                    <div class="motodology_point">
+                        <div class="motodology_point_first">
+                            <div class="button_mini_hidden"></div>
+                            <div class="motodology_text">
+                                <div class="motodology_text_header">Определение типа неисправности</div>
+                            </div>
+                        </div>
+                        <div class="motodology_number">
+                            <div class="motodology_number_old">0:15:00</div>
+                            <div class="motodology_number_new">0:00:00</div>
+                        </div>                            
+                    </div>
+                    <div class="motodology_point">
+                        <div class="motodology_point_first">
+                            <div class="button_mini_hidden"></div>
+                            <div class="motodology_text">
+                                <div class="motodology_text_header">Определение места неисправности относительным методом</div>
+                            </div>
+                        </div>
+                        <div class="motodology_number">
+                            <div class="motodology_number_old">0:00:00</div>
+                            <div class="motodology_number_new">0:00:00</div>
+                        </div>                            
+                    </div>
+                    <div class="motodology_point">
+                        <div class="motodology_point_first">
+                            <div class="button_mini">
+                                <div class="button_mini_line_1"></div>
+                                <div class="button_mini_line_2"></div>
+                                <div class="button_mini_line_3"></div>
+                            </div>
+                            <div class="motodology_text">
+                                <div class="motodology_text_header">Логическая задержка</div>
+                                <div class="menu_3">
+                                    <div class="menu_point">
+                                        <div class="menu_text">Подготовка рабочего места и допуск расчёта к работе, развёртывание агрегата РМК</div>
+                                        <div class="menu_time">
+                                            <div class="menu_time_old">1:00:00</div>
+                                            <div class="menu_time_new">0:00:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="menu_point">
+                                        <div class="menu_text">Марш к проходной подстанции</div>
+                                        <div class="menu_time">
+                                            <div class="menu_time_old">0:30:00</div>
+                                            <div class="menu_time_new">0:00:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="menu_point">
+                                        <div class="menu_text">Анализ работы РЗиА, измерение Rиз, Rп. Определение характера неисправности</div>
+                                        <div class="menu_time">
+                                            <div class="menu_time_old">0:30:00</div>
+                                            <div class="menu_time_new">0:00:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="menu_point">
+                                        <div class="menu_text">Испытания. Измерение Uпр, Rиз, Rп</div>
+                                        <div class="menu_time">
+                                            <div class="menu_time_old">0:15:00</div>
+                                            <div class="menu_time_new">0:00:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="menu_point">
+                                        <div class="menu_text">Определение зоны повреждения импульсный метод</div>
+                                        <div class="menu_time">
+                                            <div class="menu_time_old">0:30:00</div>
+                                            <div class="menu_time_new">0:00:00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="motodology_number">
+                            <div class="motodology_number_old">0:00:00</div>
+                            <div class="motodology_number_new">0:00:00</div>
+                        </div>
+                    </div>
+                    <div class="motodology_point">
+                        <div class="motodology_point_first">
+                            <div class="button_mini">
+                                <div class="button_mini_line_1"></div>
+                                <div class="button_mini_line_2"></div>
+                                <div class="button_mini_line_3"></div>
+                            </div>
+                            <div class="motodology_text">
+                                <div class="motodology_text_header">Техническая задержка</div>
+                                <div class="menu_4">
+                                    <div class="menu_point">
+                                        <div class="menu_text">Отрывка котлована и траншеи</div>
+                                        <div class="menu_time">
+                                            <div class="menu_time_old">3:00:00</div>
+                                            <div class="menu_time_new">3:00:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="menu_point">
+                                        <div class="menu_text">Определение места повреждения на кабеле, прокол и резка кабеля. Измерение Rиз участков КЛ. Вырезка дефекта. Подготовка к монтажу муфт</div>
+                                        <div class="menu_time">
+                                            <div class="menu_time_old">0:30:00</div>
+                                            <div class="menu_time_new">0:30:00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="motodology_number">
+                            <div class="motodology_number_old">3:30:00</div>
+                            <div class="motodology_number_new">3:30:00</div>
+                        </div>                            
+                    </div>
+                    <div class="motodology_point">
+                        <div class="motodology_point_first">
+                            <div class="button_mini_hidden"></div>
+                            <div class="motodology_text">
+                                <div class="motodology_text_header">Определение места неисправности абсолютным  методом</div>
+                            </div>
+                        </div>
+                        <div class="motodology_number">
+                            <div class="motodology_number_old">2:30:00</div>
+                            <div class="motodology_number_new">2:30:00</div>
+                        </div>                            
+                    </div>
+                    <div class="motodology_point">
+                        <div class="motodology_point_first">
+                            <div class="button_mini">
+                                <div class="button_mini_line_1"></div>
+                                <div class="button_mini_line_2"></div>
+                                <div class="button_mini_line_3"></div>
+                            </div>
+                            <div class="motodology_text">
+                                <div class="motodology_text_header">Техническая задержка</div>
+                                <div class="menu_5">
+                                    <div class="menu_point">
+                                        <div class="menu_text">Отрывка котлована и траншеи</div>
+                                        <div class="menu_time">
+                                            <div class="menu_time_old">3:00:00</div>
+                                            <div class="menu_time_new">3:00:00</div>
+                                        </div>
+                                    </div>
+                                    <div class="menu_point">
+                                        <div class="menu_text">Определение места повреждения на кабеле, прокол и резка кабеля. Измерение Rиз участков КЛ. Вырезка дефекта. Подготовка к монтажу муфт</div>
+                                        <div class="menu_time">
+                                            <div class="menu_time_old">0:30:00</div>
+                                            <div class="menu_time_new">0:30:00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="motodology_number">
+                            <div class="motodology_number_old">3:30:00</div>
+                            <div class="motodology_number_new">3:30:00</div>
+                        </div>                            
+                    </div>
+                    <div class="motodology_point">
+                        <div class="motodology_point_first">
+                            <div class="button_mini">
+                                <div class="button_mini_line_1"></div>
+                                <div class="button_mini_line_2"></div>
+                                <div class="button_mini_line_3"></div>
+                            </div>
+                            <div class="motodology_text">
+                                <div class="motodology_text_header">Время устранения неисправности</div>
+                                <div class="menu_6">
+                                    <div class="menu_point">
+                                        <div class="menu_text">Разделка кабеля, монтаж муфты. Засыпка котлована</div>
+                                        <div class="menu_time">
+                                            <div class="menu_time_old">6:00:00</div>
+                                            <div class="menu_time_new">6:00:00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="motodology_number">
+                            <div class="motodology_number_old">6:00:00</div>
+                            <div class="motodology_number_new">6:00:00</div>
+                        </div>                            
+                    </div>
+                    <div class="motodology_point">
+                        <div class="motodology_point_first">
+                            <div class="button_mini">
+                                <div class="button_mini_line_1"></div>
+                                <div class="button_mini_line_2"></div>
+                                <div class="button_mini_line_3"></div>
+                            </div>
+                            <div class="motodology_text">
+                                <div class="motodology_text_header">Время проверки функционирования (испытания)</div>
+                                <div class="menu_7">
+                                    <div class="menu_point">
+                                        <div class="menu_text">Прооверка Rиз испытание КЛ повышенным напряжением при помощи машины РМК</div>
+                                        <div class="menu_time">
+                                            <div class="menu_time_old">0:30:00</div>
+                                            <div class="menu_time_new">0:30:00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="motodology_number">
+                            <div class="motodology_number_old">0:30:00</div>
+                            <div class="motodology_number_new">0:30:00</div>
+                        </div>                            
+                    </div>
+                    <div class="motodology_point">
+                        <div class="motodology_point_first">
+                            <div class="button_mini">
+                                <div class="button_mini_line_1"></div>
+                                <div class="button_mini_line_2"></div>
+                                <div class="button_mini_line_3"></div>
+                            </div>
+                            <div class="motodology_text">
+                                <div class="motodology_text_header">Техническая задержка</div>
+                                <div class="menu_8">
+                                    <div class="menu_point">
+                                        <div class="menu_text">Оформление ЭТД (ТЗ, наряд, паспорт КЛ, ЖУТСиЭ). Занесение на схему в паспорт КЛ места установкимуфты</div>
+                                        <div class="menu_time">
+                                            <div class="menu_time_old">0:30:00</div>
+                                            <div class="menu_time_new">0:30:00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="motodology_number">
+                            <div class="motodology_number_old">0:30:00</div>
+                            <div class="motodology_number_new">0:30:00</div>
+                        </div>                            
+                    </div>
+                    <div class="motodology_point">
+                        <div class="motodology_point_first">
+                            <div class="button_mini">
+                                <div class="button_mini_line_1"></div>
+                                <div class="button_mini_line_2"></div>
+                                <div class="button_mini_line_3"></div>
+                            </div>
+                            <div class="motodology_text">
+                                <div class="motodology_text_header">Включение КЛ в работу</div>
+                                <div class="menu_9">
+                                    <div class="menu_point">
+                                        <div class="menu_text">Фазировка и включение КЛ в работу. Приведение схемы в ИП.</div>
+                                        <div class="menu_time">
+                                            <div class="menu_time_old">1:00:00</div>
+                                            <div class="menu_time_new">1:00:00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="motodology_number">
+                            <div class="motodology_number_old">1:00:00</div>
+                            <div class="motodology_number_new">1:00:00</div>
+                        </div>                        
+                    </div>
+
+                </div>
+            </div>
+		</main>
+        <footer class="footer">
+            <div class="horisont_line"></div>
+            <div class="footer_img">
+                <img src="img/copyright-clip-art-20.png"/>
+            </div>
+            <div class="footer_text">
+                ст.л-т Цветков А.В.,  2021 ВА РВСН.  Все права защищены.  Перепечатка и цитирование материалов запрещены.
+                <p>По всем вопросам и предложениям пишите на  <a href="https://mail.ru/">cvetkoffff15@mail.ru</a></p>
+            </div>
+            <div class="horisont_line"></div>
+        </footer>
+		<script src="js/script.js"></script>
+	</body>
+
+</html>

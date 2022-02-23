@@ -1,0 +1,998 @@
+@font-face {
+	font-family: 'Montserrat';
+	src: url("../fonts/Montserrat-Medium.woff2"),
+		url("../fonts/Montserrat-Medium.woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url("../fonts/Montserrat-Regular.woff2"),
+		url("../fonts/Montserrat-Regular.woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+body {
+	padding: 0;
+	margin: auto;
+	width: 1250px;
+	background-color: whitesmoke;
+	/* border: 1px solid blue; */
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+}
+
+.header_text {
+    position: relative;
+    z-index: 1;
+}
+
+.header {
+    margin-top: 2px;
+	padding: 10px 5px 10px 5px;
+	text-align: center;
+	background-color: #162435;
+	color: white;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: normal;
+	transition: color 0.2s;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.header_line {
+    position: absolute;
+    display: block  ;
+}
+
+.header_line--top {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #18b5a4);
+}
+
+/*.header_text:after {
+    top: 7px;
+    right: 10px;
+    content: '';
+    position: absolute;
+    width: 1500px;
+    height: 1500px;
+    border: 1px solid #18b5a4;
+    animation: rotate 20s infinite linear;
+    z-index: 2;
+}
+
+.header_text:before {
+    top: 7px;
+    right: 10px;
+    content: '';
+    position: absolute;
+    width: 1500px;
+    height: 1500px;
+    border: 1px solid #18b5a4;
+    animation: rotate 30s infinite linear;
+    z-index: 2;
+}
+
+@keyframes rotate{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}*/
+
+.main {
+
+}
+
+.data {
+	display: flex;
+	justify-content: space-between;
+	/*height: 320px;*/
+	color: #1f334b;
+	font-size: 15px;
+	margin: 15px 0;
+}
+
+.form {
+	display: flex;	
+}
+
+.input_data{
+	display: flex;
+}
+
+.input_data_colum_1 {
+	padding: 10px 15px 10px 10px;
+	width: 530px;
+    border-radius: 8px;
+	/* border: 1px solid blue; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+    transition: all 0.2s;
+}
+
+.input_data_colum_1.red {
+    box-shadow: 0 0 5px red;
+    transition: all 0.2s linear;
+}
+
+.input_data_colum_1_line {
+	visibility: hidden;
+    opacity: 0;
+	height: 1px;
+	background-color: red;
+    transition: all 0.2s linear;
+}
+
+.input_data_colum_2 {
+	padding: 10px 10px 10px 15px;
+	/* border: 1px solid blue; */
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.input_data_colum_text {
+	font-weight: 550;
+	font-size: 20px;
+	text-align: center;
+	/* letter-spacing: 2px; */
+}
+
+.input {
+	display: flex;
+	align-items: center;
+	transition: color 0.2s;
+}
+
+.text_input {
+    cursor: pointer;
+}
+
+.stupen_projiga {
+	/* border: 1px solid blue; */
+    border-radius: 8px;
+	height: 115px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+    transition: all 0.2s ease 0s;
+    padding: 5px;
+}
+
+.stupen_projiga.red {
+    box-shadow: 0 0 5px red;
+    transition: all 0.2s linear;
+}
+
+.stupen_projiga.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.stupen_projiga_line {
+	visibility: hidden;
+	height: 1px;
+	background-color: red;
+    transition: all 0.2s linear;
+}
+
+.stupen_projiga_text {
+	font-weight: 500;
+	font-size: 17px;
+	text-align: center;
+}
+
+.number_of_stupen_projiga {
+	transition: color 0.2s;
+    display: flex;
+    align-items: center;
+}
+
+.distance {
+    padding: 5px;
+    height: 80px;
+    display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+    border-radius: 8px;
+	/* border: 1px solid blue; */
+}
+
+.distance.red {
+    box-shadow: 0 0 5px red;
+    transition: all 0.2s linear;
+}
+
+.distance_line {
+    visibility: hidden;
+    opacity: 0;
+	height: 1px;
+	background-color: red;
+    transition: all 0.2s linear;
+}
+
+.distance_text {
+	font-weight: 500;
+	font-size: 17px;
+	text-align: center;
+	/*margin: 0 0 10px 0;*/
+}
+
+.distance_set {
+	display: flex;
+	align-items: center;
+}
+
+.distance_measure {
+	font-size: 15px;
+	margin: 0 0 0 15px;
+}
+
+.distance_value {
+	font-family: 'Montserrat', sans-serif;
+	padding: 3px;
+	font-size: 15px;
+	width: 170px;
+	color: #1f334b;
+}
+
+.segment {
+	/* border: 1px solid blue; */
+    border-radius: 8px;
+	height: 90px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+    padding: 5px;
+}
+
+.segment.red{
+    box-shadow: 0 0 5px red;
+    transition: all 0.2s linear;
+}
+
+.segment_line {
+	visibility: hidden;
+	height: 1px;
+	background-color: red;
+    transition: all 0.2s linear;
+}
+
+.segment_text {
+	font-weight: 500;
+	font-size: 17px;
+	text-align: center;
+}
+
+.type_of_segment {
+	transition: color 0.2s;
+    display: flex;
+    align-items: center;
+}
+
+.line {
+	width: 1px;
+	/*height: 300px;*/
+	background-color: #162435;
+}
+
+.result {
+	margin: 10px;
+	display: flex;
+    align-items: center;
+	width: 370px;
+    position: relative;
+}
+
+.button {
+    position: absolute;
+    top: 5px;
+    width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	padding: 5px;
+	font-weight: 500;
+	font-size: 18px;
+	color: #fff;
+	background-color: #18b5a4;
+	text-align: center;
+    transition: all 0.2s;
+    border-radius: 5px;
+    letter-spacing: 2px;
+}
+
+/*.button:before {
+    content: '';
+    position:absolute;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+}*/
+
+.button_reset {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	padding: 4px;
+	font-weight: 500;
+	font-size: 15px;
+	color: white;
+	background-color: #18b5a4;
+	text-align: center;
+    transition: all 0.2s;
+    border-radius: 5px;
+    letter-spacing: 2px;
+}
+
+.result_output {
+	/*height: 150px;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/* margin: 20px 0 20px 0 ; */
+}
+
+.time_of_repair {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 500;
+	font-size: 15px;
+	transition: color 0.2s;
+    padding: 10px 0;
+}
+
+.time_of_repair_text {
+	transition: color 0.2s;
+	width: 285px;
+}
+
+.time_of_repair_result {
+	margin: 0 0 0 10px;
+	font-size: 17px;
+}
+
+.time_difference {
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 500;
+	font-size: 15px;
+	transition: color 0.2s;
+    padding: 10px 0;
+}
+
+.time_difference_text {
+    transition: color 0.2s;
+	width: 285px;
+}
+
+.time_difference_result {
+    margin: 0 0 0 10px;
+	font-size: 17px;
+}
+
+.time_of_new_repair {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 500;
+	font-size: 15px;
+	transition: color 0.2s;
+    padding: 10px 0;
+}
+
+.time_of_new_repair_text {
+	transition: color 0.2s;
+	width: 285px;
+}
+
+.time_of_new_repair_result {
+	margin: 0 0 0 10px;
+	font-size: 17px;
+}
+
+.percent {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 500;
+	font-size: 15px;
+	transition: color 0.2s;
+    padding: 10px 0;
+}
+
+.percent_text {
+	transition: color 0.2s;
+	width: 285px;
+}
+
+.percent_result {
+	display: flex;
+	margin: 0 0 0 10px;
+	font-size: 17px;
+}
+
+.percent_result_simbol {
+	margin: 0 0 0 3px;
+}
+
+.alert {
+	visibility: hidden;
+    opacity: 0;
+	font-size: 11px;
+	letter-spacing: 2px;
+	font-weight: 500;
+	color: red;
+    transition: all 0.2s linear;
+}
+
+
+
+
+
+
+/* ---выигрыш мероприятий--- */
+
+.motodology {
+    color: #1f334b;
+    margin-bottom: 50px;
+    /*height: 1000px;*/
+}
+
+.horisont_line {
+    background-color: #162435;
+    height: 1px;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.motodology_header {
+    padding: 10px 5px 10px 5px;
+	text-align: center;
+	background-color: #162435;
+	color: white;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: normal;
+	transition: color 0.2s;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+/*.motodology_header:after {
+    top: 7px;
+    right: 10px;
+    content: '';
+    position: absolute;
+    width: 1500px;
+    height: 1500px;
+    border: 1px solid #18b5a4;
+    animation: rotate_1 20s infinite linear;
+}
+
+.motodology_header:before {
+    top: 7px;
+    right: 10px;
+    content: '';
+    position: absolute;
+    width: 1500px;
+    height: 1500px;
+    border: 1px solid #18b5a4;
+    animation: rotate_1 25s infinite linear;
+}
+
+@keyframes rotate_1{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+}*/
+
+.motodology_main {
+    margin: 5px 0 0 0;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.motodology_tabale_name {
+    display: flex;
+    justify-content: space-between;
+    transition: color 0.2s;
+    font-weight: 500;
+    font-size: 17px;
+    align-items: center;
+}
+
+.motodology_tabale_name_name {
+    margin: 0 0 0 20px;
+}
+
+.motodology_tabale_name_time {
+    display: flex;
+    align-items: center;
+}
+
+.motodology_tabale_name_time_old {
+    width: 150px;
+    text-align: center;
+}
+
+.motodology_tabale_name_time_new {
+    font-size: 15px;
+    width: 150px;
+    text-align: center;
+}
+
+.motodology_point {
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    transition: color 0.2s;
+}
+
+.motodology_point_first {
+    display: flex;
+}
+
+.button_mini {
+    width: 15px;
+    height: 15px;
+    padding: 1px;
+	background-color: #18b5a4;
+    margin: 1px 5px 0 0;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.button_mini_line_1 {
+    width: 13px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 1px;
+    transition: all 0.2s;
+}
+
+.button_mini_line_2 {
+    width: 13px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 1px;
+    transition: all 0.2s;
+}
+
+.button_mini_line_3 {
+    width: 13px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 1px;
+    transition: all 0.2s;
+}
+
+.button_mini_line_1.rotate {
+    transform: translateY(5px) rotate(-45deg);
+}
+
+.button_mini_line_2.opacity {
+    transform: scale(0) translate(0px, -50%);
+}
+
+.button_mini_line_3.rotate {
+    transform: translateY(-5px) rotate(45deg);
+}
+
+
+.button_mini_hidden {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px 0 0;
+    opacity: 0;
+}
+
+.motodology_text {
+    width: 870px;
+    transition: all 0.2s;
+}
+
+.motodology_number {
+    display: flex;
+}
+
+.motodology_number_old {
+    width: 150px;
+    padding: 1px 0;
+    height: 19px;
+    text-align: center;
+}
+
+.motodology_number_old.color {
+    background-color: #ff5a5a;
+    font-weight: 550;
+}
+
+.motodology_number_new {
+    width: 150px;
+    height: 19px;
+    padding: 1px 0;
+    text-align: center;
+}
+
+.motodology_number_new.color {
+    background-color: #81e05b;
+    font-weight: 550;
+}
+
+.menu {
+    font-size: 12px;
+    margin: -250px 0 0 30px;
+	padding: 0px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s linear;
+}
+
+.menu.show {
+    visibility: visible;
+    opacity: 1;
+    margin: 3px 0 0 30px;
+}
+
+.menu_1 {
+    font-size: 12px;
+    margin: -50px 0 0 30px;
+	padding: 0px;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s linear;
+}
+
+.menu_1.show {
+    visibility: visible;
+    opacity: 1;
+    margin: 3px 0 0 30px;
+}
+
+.menu_2 {
+    font-size: 12px;
+    margin: -50px 0 0 30px;
+	padding: 0px;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s linear;
+}
+
+.menu_2.show {
+    visibility: visible;
+    opacity: 1;
+    margin: 3px 0 0 30px;
+}
+
+.menu_3 {
+    font-size: 12px;
+    margin: -75px 0 0 30px;
+	padding: 0px;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s linear;
+}
+
+.menu_3.show {
+    visibility: visible;
+    opacity: 1;
+    margin: 3px 0 0 30px;
+}
+
+.menu_4 {
+    font-size: 12px;
+    margin: -50px 0 0 30px;
+	padding: 0px;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s linear;
+}
+
+.menu_4.show {
+    visibility: visible;
+    opacity: 1;
+    margin: 3px 0 0 30px;
+}
+
+.menu_5 {
+    font-size: 12px;
+    margin: -50px 0 0 30px;
+	padding: 0px;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s linear;
+}
+
+.menu_5.show {
+    visibility: visible;
+    opacity: 1;
+    margin: 3px 0 0 30px;
+}
+
+.menu_6 {
+    font-size: 12px;
+    margin: -50px 0 0 30px;
+	padding: 0px;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s linear;
+}
+
+.menu_6.show {
+    visibility: visible;
+    opacity: 1;
+    margin: 3px 0 0 30px;
+}
+
+.menu_7 {
+    font-size: 12px;
+    margin: -50px 0 0 30px;
+	padding: 0px;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s linear;
+}
+
+.menu_7.show {
+    visibility: visible;
+    opacity: 1;
+    margin: 3px 0 0 30px;
+}
+
+.menu_8 {
+    font-size: 12px;
+    margin: -50px 0 0 30px;
+	padding: 0px;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s linear;
+}
+
+.menu_8.show {
+    visibility: visible;
+    opacity: 1;
+    margin: 3px 0 0 30px;
+}
+
+.menu_9 {
+    font-size: 12px;
+    margin: -50px 0 0 30px;
+	padding: 0px;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.menu_9.show {
+    visibility: visible;
+    opacity: 1;
+    margin: 3px 0 0 30px;
+    transition: all 0.3s linear;
+}
+
+.menu_point {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    transition: all 0.2s ease 0s;
+}
+
+.menu_text {
+    width: 800px;
+}
+
+.menu_time {
+    display: flex;
+    margin: 0 -250px 0 0;
+}
+
+.menu_time_old {
+    text-align: right;
+    width: 70px;
+    margin: 0 0 0 0;
+}
+
+.menu_time_new {
+    text-align: right;
+    width: 70px;
+    margin: 0 0 0 80px;
+}
+
+.menu_time_new.color {
+    background-color: #81e05b;
+    font-weight: 550;
+}
+
+.menu_time_old.color {
+    background-color: #ff5a5a;
+    font-weight: 550;
+}
+
+
+
+.cirkul_border {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #808080;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    transition: all 0,1s linear;
+}
+
+.cirkul_border.show {
+    border-color: #162435;
+}
+
+.cirkul {
+    width: 9px;
+    height: 9px;
+    left: 1px;
+    top: 1px;
+    position: absolute;
+    border: 1px solid whitesmoke;
+    background-color: #162435;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0;
+    transition: all 0,1s linear;
+}
+
+.cirkul.show {
+    opacity: 1;
+}
+
+.radio {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+
+
+
+
+
+/* ---footer--- */
+
+.footer {
+    padding: 20px 10px;
+    display: flex;
+}
+
+.footer_text {
+    width: 2500px;
+    font-size: 10px;
+    text-align: center;
+    margin-top: -5px;
+}
+
+.footer_img {
+    padding: 0 0 0 5px;
+    margin-top: -4px;
+    position: relative;
+}
+
+img {
+    position: absolute;
+    top: -2px;
+    left: 8px;
+    height: 15px;
+    width: 15px;
+}
+
+p {
+    margin: 0;
+}
+
+
+
+
+
+/* ---псевдоклассы--- */
+
+.header:hover {
+	color: #18b5a4;
+}
+
+.motodology_header:hover {
+	color: #18b5a4;
+}
+
+.motodology_text_header:hover {
+    cursor: pointer;
+}
+
+.button:hover {
+    top: 2px;
+    box-shadow: 0 3px 0 0 #0c5b52;
+	color: #0c5b52;
+	cursor: pointer;
+}
+
+.button:active {
+    top: 3px;
+    box-shadow: 0 2px 0 0 #0c5b52;
+}
+
+
+.button_reset:hover {
+    bottom: 8px;
+    transition: all 0.2s linear;
+    box-shadow: 0 3px 0 0 #0c5b52;
+	color: #0c5b52;
+	cursor: pointer;
+}
+
+.button_reset:active {
+    bottom: 7px;
+    box-shadow: 0 2px 0 0 #0c5b52;
+}
+
+.button_mini:hover {
+    background-color: #0c5b52;
+}
+
+.input:hover {
+	color: rgb(1, 107, 107);
+}
+
+.number_of_stupen_projiga:hover	 {
+	color: rgb(1, 107, 107);
+}
+
+.type_of_segment:hover {
+	color: rgb(1, 107, 107);
+}
+
+.time_of_repair_text:hover {
+	color: rgb(1, 107, 107);
+}
+
+.time_difference_text:hover {
+    color: rgb(1, 107, 107);
+}
+
+.time_of_new_repair_text:hover {
+	color: rgb(1, 107, 107);
+}
+
+.percent_text:hover {
+	color: rgb(1, 107, 107);
+}
